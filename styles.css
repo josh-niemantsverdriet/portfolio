@@ -1,0 +1,341 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1A1A1A; /* Dark background with a slight softening */
+    color: #E0E0E0; /* Softer text color */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: repeating-linear-gradient(45deg, #1a1a1a, #1a1a1a 5px, #333 30px, #333 20px);
+    background-attachment: fixed;
+    padding-top: 5%;
+}
+
+* {
+    word-wrap: break-word; /* For older browsers */
+    overflow-wrap: break-word; /* For modern browsers */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in the width/height */
+
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Sticky Navigation Header */
+#sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1A1A1A;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Navigation styling */
+#sticky-header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+#sticky-header nav ul li {
+    display: inline;
+    margin: 0 12px;
+}
+
+#sticky-header nav ul li a {
+    color: #FF7043;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#sticky-header nav ul li a:hover {
+    color: #E0E0E0;
+}
+
+/* General Section Styling */
+section {
+    padding: 50px 20px 50px;
+    max-width: 800px;
+    margin: auto;
+    border-bottom: 5px solid #000000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    line-height: 25px;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Name Section */
+#name-section {
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 0px; /* Ensuring there's space for the sticky header */
+}
+
+#name {
+    font-family: 'Cinzel', serif;
+    font-size: auto;
+    font-weight: bold;
+    color: #FF7043;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#name-section p {
+    font-family: Arial, sans-serif;
+    font-size: auto;
+    color: #B0B0B0;
+    margin-top: 10px;
+}
+
+/* About Me Section Image */
+.about-image {
+    width: 30%;
+    height: auto;
+    margin-top: 20px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.education-image {
+    width: 30%;
+    height: auto;
+    margin-top: 20px;
+    transition: filter 0.3s ease;
+    align-content: center;
+}
+
+
+/* Skills Section */
+#skills .skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+#skills .skill-item {
+    background-color: #222;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #E0E0E0;
+    align-self: center;
+    transition: background 0.3s ease, font-size 0.3s ease;
+}
+
+#skills .skill-item:hover {
+    background-color: #444;
+}
+
+/* Expandable Section */
+.expandable {
+    background: #222;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    overflow: hidden;
+}
+
+.expandable:hover {
+    background: #444;
+}
+
+.expand-btn {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+    letter-spacing: 1px;
+    transition: transform 0.2s ease, color 0.3s;
+    color: #E0E0E0;
+}
+
+.expand-btn:hover {
+    transform: scale(1.05);
+    color: #E0E0E0;
+}
+
+#section-header {
+
+    font-family: 'Cinzel', serif;
+    font-size: 30pt;
+    font-weight: bold;
+    color: #FF7043;
+    margin: 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+}
+
+.expand-content {
+    display: block;
+    padding: 0 15px;
+    height: 0;
+    transition: height 0.5s ease-out, padding 0.3s ease-out;
+    overflow: hidden;
+    text-align: center;
+    line-height: 30px;
+}
+.expand-btn-text {
+    color: #FF7043 !important; /* Ensure text is orange */
+    font-size: 1em !important; /* Make the text smaller */
+    cursor: pointer; /* Add cursor style */
+    padding-top: 1%;
+}
+
+.expandable.open .expand-content {
+    height: auto;
+    padding: 15px;
+}
+
+/* Footer (Contact Section) */
+#contact p {
+    font-size: 1.2em;
+    color: #B0B0B0;
+}
+
+#contact a {
+    color: #FF7043;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #E0E0E0;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    /* Adjust sticky header padding for smaller screens */
+    #sticky-header {
+        padding: 15px 0;
+    }
+
+    /* Adjust navigation for smaller screens */
+    #sticky-header nav ul {
+        flex-wrap: wrap; /* Allow the items to wrap */
+        justify-content: center;
+    }
+
+    #sticky-header nav ul li {
+        margin: 5px 10px;
+    }
+
+    #sticky-header nav ul li a {
+        font-size: 1.2em; /* Make the font size larger for mobile */
+    }
+
+    /* Adjust the font size of the name section */
+    #name-section {
+        padding: 15px;
+        padding-top: 90px;
+    }
+
+    #name {
+        font-size: 1.5em;
+    }
+
+    /* About image takes up more space */
+    .about-image {
+        width: 50%;
+    }
+
+    education-image {
+        width: 50%;
+    }
+
+    /* Expand button for mobile */
+    .expand-btn p {
+        font-size: 0.8em;
+        color: #FF7043 !important; /* Ensures the color is applied */
+    }
+
+    #skills .skill-item {
+        background-color: #222;
+        margin: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #E0E0E0;
+        align-self: center;
+        transition: background 0.3s ease, font-size 0.3s ease;
+    }
+
+        /* Skills Section */
+    #skills .skills-list {
+
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        size: 0%;
+    }
+
+    * {
+        word-wrap: break-word; /* For older browsers */
+        overflow-wrap: break-word; /* For modern browsers */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Ensures padding and borders are included in the width/height */
+    
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #1A1A1A; /* Dark background with a slight softening */
+        color: #E0E0E0; /* Softer text color */
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background: repeating-linear-gradient(45deg, #1a1a1a, #1a1a1a 5px, #333 30px, #333 20px);
+        background-attachment: fixed;
+        padding-top: 5%;
+        max-width: 100%;
+    }
+    
+    .expand-content {
+        display: block;
+        padding: 0 15px;
+        height: 0;
+        transition: height 0.5s ease-out, padding 0.3s ease-out;
+        overflow: hidden;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    /* General Section Styling */
+section {
+    padding: 50px 20px 50px;
+    max-width: 100%;
+    margin: auto;
+    border-bottom: 5px solid #000000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    line-height: 25px;
+}
+}
