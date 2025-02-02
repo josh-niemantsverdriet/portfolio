@@ -4,8 +4,8 @@
 /* General Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1A1A1A; /* Dark background with a slight softening */
-    color: #E0E0E0; /* Softer text color */
+    background-color: #1A1A1A;
+    color: #E0E0E0;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -15,12 +15,11 @@ body {
 }
 
 * {
-    word-wrap: break-word; /* For older browsers */
-    overflow-wrap: break-word; /* For modern browsers */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding and borders are included in the width/height */
-
+    box-sizing: border-box;
 }
 
 /* Smooth scrolling */
@@ -48,7 +47,7 @@ html {
     display: flex;
     justify-content: center;
     margin: 0;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-wrap: wrap; /* Wrap header text on smaller screens */
 }
 
 #sticky-header nav ul li {
@@ -88,7 +87,7 @@ section.visible {
 #name-section {
     padding: 30px 20px;
     text-align: center;
-    margin-top: 0px; /* Ensuring there's space for the sticky header */
+    margin-top: 0px;
 }
 
 #name {
@@ -108,7 +107,7 @@ section.visible {
     margin-top: 10px;
 }
 
-/* About Me Section Image */
+/* About Me Image */
 .about-image {
     width: 30%;
     height: auto;
@@ -202,9 +201,9 @@ section.visible {
     line-height: 30px;
 }
 .expand-btn-text {
-    color: #FF7043 !important; /* Ensure text is orange */
-    font-size: 1em !important; /* Make the text smaller */
-    cursor: pointer; /* Add cursor style */
+    color: #FF7043 !important;
+    font-size: 1em !important;
+    cursor: pointer;
     padding-top: 1%;
 }
 
@@ -213,7 +212,7 @@ section.visible {
     padding: 15px;
 }
 
-/* Footer (Contact Section) */
+/* Contact Section */
 #contact p {
     font-size: 1.2em;
     color: #B0B0B0;
@@ -229,16 +228,13 @@ section.visible {
     color: #E0E0E0;
 }
 
-/* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
-    /* Adjust sticky header padding for smaller screens */
     #sticky-header {
         padding: 15px 0;
     }
 
-    /* Adjust navigation for smaller screens */
     #sticky-header nav ul {
-        flex-wrap: wrap; /* Allow the items to wrap */
+        flex-wrap: wrap; 
         justify-content: center;
     }
 
@@ -247,10 +243,9 @@ section.visible {
     }
 
     #sticky-header nav ul li a {
-        font-size: 1.2em; /* Make the font size larger for mobile */
+        font-size: 1.2em;
     }
 
-    /* Adjust the font size of the name section */
     #name-section {
         padding: 15px;
         padding-top: 90px;
@@ -260,7 +255,6 @@ section.visible {
         font-size: 1.5em;
     }
 
-    /* About image takes up more space */
     .about-image {
         width: 50%;
     }
@@ -272,7 +266,7 @@ section.visible {
     /* Expand button for mobile */
     .expand-btn p {
         font-size: 0.8em;
-        color: #FF7043 !important; /* Ensures the color is applied */
+        color: #FF7043 !important; 
     }
 
     #skills .skill-item {
@@ -296,18 +290,18 @@ section.visible {
     }
 
     * {
-        word-wrap: break-word; /* For older browsers */
-        overflow-wrap: break-word; /* For modern browsers */
+        word-wrap: break-word;
+        overflow-wrap: break-word;
         margin: 0;
         padding: 0;
-        box-sizing: border-box; /* Ensures padding and borders are included in the width/height */
+        box-sizing: border-box;
     
     }
 
     body {
         font-family: Arial, sans-serif;
-        background-color: #1A1A1A; /* Dark background with a slight softening */
-        color: #E0E0E0; /* Softer text color */
+        background-color: #1A1A1A;
+        color: #E0E0E0;
         margin: 0;
         padding: 0;
         text-align: center;
@@ -315,6 +309,7 @@ section.visible {
         background-attachment: fixed;
         padding-top: 5%;
         max-width: 100%;
+        overflow-x: hidden;
     }
     
     .expand-content {
@@ -327,15 +322,15 @@ section.visible {
         line-height: 30px;
     }
 
-    /* General Section Styling */
-section {
-    padding: 50px 20px 50px;
-    max-width: 100%;
-    margin: auto;
-    border-bottom: 5px solid #000000;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    line-height: 25px;
-}
+        /* Mobile General Section Styling */
+    section {
+        padding: 50px 20px 50px;
+        max-width: 100%;
+        margin: auto;
+        border-bottom: 5px solid #000000;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        line-height: 25px;
+    }
 }
