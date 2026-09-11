@@ -3,158 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josh Digital Portfolio</title>
+    <meta name="description" content="Portfolio of Josh Niemantsverdriet, a Computer Science student and software/data engineer with experience in full-stack development, data engineering, cloud systems, and AI-driven applications.">
+    <title>Josh Niemantsverdriet | Software & Data Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- About Me -->
-    <section id="name-section">
-        <h1 id="name">
-            <section1  id="about">
-                Josh Niemantsverdriet
-            </section1>
-        </h1>
-        <p>Software Developer | Problem Solver | Innovator</p>
-    </section>
-
-    <!-- Sticky Header -->
-    <header id="sticky-header">
-        <nav>
-            <ul id="nav-list">
+    <header class="site-header" id="top">
+        <nav class="nav container" aria-label="Primary navigation">
+            <a class="brand" href="#top" aria-label="Josh Niemantsverdriet home">JN</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+                <span class="sr-only">Toggle navigation</span>
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-list" id="nav-list">
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="main-content">
-        <section>
-            <p>Hi, I'm Josh! I have a strong passion for software development and data science, and am grateful for the opportunity to apply that passion in the classroom, at work, and in my spare time. Outside of an academic/work setting, I am also an active member of the Bearcat Bands, my participation including marching band, basketball band, and wind ensemble - all on tuba/sousaphone. Additionally, I really enjoy cooking, board games, and football. </p>
-            <img src="prof_pic1.jpg" alt="A picture of me" class="about-image">
-        </section>    
-        <!-- Skills -->
-        <section id="skills">
-            <h1 id="section-header">Skills</h1>
-            <div class="skills-list">
-                <div class="skill-item" style="font-size: 1.4em; padding: 15px 30px;">JavaScript</div>
-                <div class="skill-item" style="font-size: 1.6em; padding: 10px 25px;">Python</div>
-                <div class="skill-item" style="font-size: 1.4em; padding: 20px 40px;">Unity</div>
-                <div class="skill-item" style="font-size: 1.6em; padding: 10px 25px;">C#</div>
-                <div class="skill-item" style="font-size: 1.4em; padding: 10px 25px;">Java</div>
-                <div class="skill-item" style="font-size: 1.4em; padding: 10px 25px;">SQL</div>
-                <div class="skill-item" style="font-size: 1.8em; padding: 12px 28px;">Data Analysis</div>
-                <div class="skill-item" style="font-size: 1.2em; padding: 10px 25px;">MATLAB</div>
-                <div class="skill-item" style="font-size: 1.2em; padding: 10px 25px;">VBA</div>
-                <div class="skill-item" style="font-size: 1.2em; padding: 10px 25px;">C</div>
-                <div class="skill-item" style="font-size: 1.2em; padding: 10px 25px;">LabVIEW</div>
-                <div class="skill-item" style="font-size: 1.8em; padding: 10px 25px;">Git</div>
-                <div class="skill-item" style="font-size: 1.4em; padding: 10px 25px;">Microsoft Azure</div>
-                <div class="skill-item" style="font-size: 1.8em; padding: 14px 30px;">Full-stack Development</div>
-                <div class="skill-item" style="font-size: 1.2em; padding: 12px 28px;">CSS</div>
-                <div class="skill-item" style="font-size: 1.6em; padding: 10px 25px;">Mendix</div>
-                <div class="skill-item" style="font-size: 1.4em; padding: 10px 25px;">AppDynamics</div>
-                <div class="skill-item" style="font-size: 1.4em; padding: 10px 25px;">Grafana</div>
-                <div class="skill-item" style="font-size: 1.4em; padding: 10px 25px;">Teamcenter</div>
-                <div class="skill-item" style="font-size: 1.2em; padding: 12px 28px;">HTML</div>
-                <div class="skill-item" style="font-size: 1.6em; padding: 10px 25px;">Jira</div>
-                <div class="skill-item" style="font-size: 1.4em; padding: 10px 25px;">Katalon</div>
-                <div class="skill-item" style="font-size: 1.4em; padding: 10px 25px;">Quality Assurance</div>
-                <div class="skill-item" style="font-size: 1.2em; padding: 10px 25px;">Heidi</div>
-                <div class="skill-item" style="font-size: 1.2em; padding: 10px 25px;">Insomnia</div>
-                <div class="skill-item" style="font-size: 1.4em; padding: 10px 25px;">Documentation</div>
-            </div>
-        </section>
-        <!-- Experience -->
-        <section id="experience">
-            <h1 id="section-header">Experience</h1>
-            <!------------------------------------------------------------------------------------------------------------------>
-                <div class="expandable">
-                    <p class="expand-btn">London Computer Systems (LCS) - Quality Assurance Co-op</p>
-                    <div class="expand-content">
-                        <p>1. Test software programs to compare to specifications and documentation</p>
-                        <p>2. Create and utilize test cases to ensure data competency and security</p>
-                        <p>3. Determine and suggest solutions or improvements to software issues or inconsistencies</p>
-                        <p>4. Develop programs to test and verify defects in software programs</p>
+    <main>
+        <section class="hero section" id="about">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">Computer Science @ University of Cincinnati</p>
+                    <h1>Josh Niemantsverdriet</h1>
+                    <p class="hero-title">Software Engineer building full-stack, data, cloud, and AI-driven systems.</p>
+                    <p class="hero-description">
+                        I am a Computer Science student in UC's ACCEND program with hands-on engineering experience across
+                        software development, data engineering, quality engineering, and enterprise IT. I enjoy building systems
+                        that turn complex workflows and data into useful products.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#projects">View projects</a>
+                        <a class="button secondary" href="https://github.com/josh-niemantsverdriet" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a class="button secondary" href="https://linkedin.com/in/joshua-niemantsverdriet" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </div>
-                    <h3>January 2025 - Present</h3>
-                    <p class="expand-btn-text">Click to expand</p>
                 </div>
-            <!------------------------------------------------------------------------------------------------------------------>
-                <div class="expandable">
-                    <h3 class="expand-btn">Copeland - Computer Science/IT/MIS Co-op</h3>
-                    <div class="expand-content">
-                        <p>1. Developed an OpenID Connection application to allow SSO for all of Copeland's Mendix applications</p>
-                        <p>2. Improved a script used to install company-approved applications to new machines</p>
-                        <p>3. Deployed knowledge and resources to solve unpredictable hardware/software issues of Copeland engineers</p>
-                        <p>4. Utilized AppDynamics and Grafana to create dashboards to monitor various metrics for Azure and Teamcenter</p>
+
+                <div class="hero-side reveal">
+                    <div class="portrait-wrap">
+                        <img src="prof_pic1.jpg" alt="Portrait of Josh Niemantsverdriet" class="portrait">
                     </div>
-                    <p class="expand-btn-text">Click to expand</p>
+                    <div class="metrics" aria-label="Career highlights">
+                        <div class="metric">
+                            <strong>4</strong>
+                            <span>Co-op rotations</span>
+                        </div>
+                        <div class="metric">
+                            <strong>8</strong>
+                            <span>Applications supported</span>
+                        </div>
+                        <div class="metric">
+                            <strong>18K+</strong>
+                            <span>Employees served</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- Projects -->
-        <section id="projects">
-            <h1 id="section-header">Projects</h1>
-            <div class="expandable">
-                <h3 class="expand-btn">Automated NFL Fan Sentiment Analysis</h3>
-                <div class="expand-content">
-                    <p>1. Authored a Python script to scrape and process over 500 Reddit posts daily as well as weekly game outcomes</p>
-                    <p>2. Utilized Azure SQL Database to centralize data from Python script </p>
-                    <p>3. Created interactive dashboards and reports in Power BI to visualize fan sentiment trends and insights within the NFL </p>
+
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Where I've worked</p>
+                    <h2>Experience</h2>
+                    <p>Engineering experience spanning full-stack development, enterprise data, testing, identity, and observability.</p>
                 </div>
-                <h3>June 2024 – Present</h3>
-                <p>|</p>
-                <h3>Personal Project</h3>
-                
-                <p class="expand-btn-text">Click to expand</p>
-            </div>
-             <!-------------------------------------------------------------------------------------------------------------------->
-            <div class="expandable">
-                <h3 class="expand-btn">Mendix OIDC Authentication</h3>
-                <div class="expand-content">
-                    <p>1. Developed a Mendix dashboard to configure OpenID Connect (OIDC) authentication for new applications</p>
-                    <p>2. Provided 10+ Mendix developers with an effortlessly scalable foundation for SSO</p>
+
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="experience-card">
+                            <div class="card-topline">
+                                <div>
+                                    <h3>Fifth Third Bank</h3>
+                                    <p class="role">Enterprise Data Office Co-op — Software Engineering</p>
+                                </div>
+                                <div class="meta">Cincinnati, OH<br>May 2026 – Aug. 2026</div>
+                            </div>
+                            <ul>
+                                <li>Developed a spreadsheet-style full-stack interface using Java, TypeScript, and Spring Boot for managing production data across Snowflake and IBM Db2.</li>
+                                <li>Implemented separation-of-duties controls and audit logging to support data governance and compliance requirements.</li>
+                                <li>Expanded backend unit testing and remediated dependency vulnerabilities across eight applications ahead of production deployment.</li>
+                            </ul>
+                            <div class="tags" aria-label="Technologies used">
+                                <span>Java</span><span>TypeScript</span><span>Spring Boot</span><span>Snowflake</span><span>Db2</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="experience-card">
+                            <div class="card-topline">
+                                <div>
+                                    <h3>Fifth Third Bank</h3>
+                                    <p class="role">Enterprise Data Office Co-op — Data Engineering</p>
+                                </div>
+                                <div class="meta">Cincinnati, OH<br>Aug. 2025 – Dec. 2025</div>
+                            </div>
+                            <ul>
+                                <li>Enhanced dbt pipelines supporting customer master data by implementing additional data quality tests.</li>
+                                <li>Built a Snowflake Cortex Analyst semantic model integrating 10 customer data tables to enable natural-language querying and reduce reliance on ad-hoc SQL.</li>
+                                <li>Evaluated a third-party data product to assess its potential to improve customer data quality.</li>
+                            </ul>
+                            <div class="tags" aria-label="Technologies used">
+                                <span>Snowflake</span><span>dbt</span><span>SQL</span><span>Cortex Analyst</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="experience-card">
+                            <div class="card-topline">
+                                <div>
+                                    <h3>London Computer Systems</h3>
+                                    <p class="role">Software QA Co-op</p>
+                                </div>
+                                <div class="meta">Loveland, OH<br>Jan. 2025 – May 2025</div>
+                            </div>
+                            <ul>
+                                <li>Automated software testing and defect verification for applications developed in C# and Angular.</li>
+                                <li>Designed and executed test cases to identify functional, data integrity, and security defects.</li>
+                            </ul>
+                            <div class="tags" aria-label="Technologies used">
+                                <span>C#</span><span>Angular</span><span>QA</span><span>Test Automation</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="experience-card">
+                            <div class="card-topline">
+                                <div>
+                                    <h3>Copeland</h3>
+                                    <p class="role">Computer Science / IT / MIS Co-op</p>
+                                </div>
+                                <div class="meta">Sidney, OH<br>Aug. 2023 – Aug. 2024</div>
+                            </div>
+                            <ul>
+                                <li>Developed an OpenID Connect solution enabling single sign-on across Copeland's Mendix applications.</li>
+                                <li>Built a Mendix application streamlining agency approval retrieval for more than 18,000 employees.</li>
+                                <li>Created AppDynamics and Grafana dashboards to monitor Azure and Teamcenter application metrics.</li>
+                            </ul>
+                            <div class="tags" aria-label="Technologies used">
+                                <span>OpenID Connect</span><span>Mendix</span><span>Azure</span><span>Grafana</span><span>AppDynamics</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-                <h3>June 2024 - August 2024</h3>
-                <p>|</p>
-                <h3>Copeland</h3>
-                
-                <p class="expand-btn-text">Click to expand</p>
-            </div>
-            <!--------------------------------------------------------------------------------------------------------------------->
-            <div class="expandable">
-                <h3 class="expand-btn">Agency Approval Retrievement Management (AARM)</h3>
-                <div class="expand-content">
-                    <p>1. Developed an application in Mendix to manage the retrieval of agency approvals for Copeland, handling thousands of approvals stored within Siemens Teamcenter</p>
-                    <p>2. Enabled Copeland's 18,000+ employees to efficiently access, download, and add approvals based on identification criteria </p>
-                </div>
-                <h3>October 2023 - December 2023</h3>
-                <p>|</p>
-                <h3>Copeland</h3>
-                <p class="expand-btn-text">Click to expand</p>
             </div>
         </section>
-        <!-- Education -->
-        <section id="education">
-            <h1 id="section-header">Education</h1>
-            <h4>Expected Graduation: May 2027</h4>
-            <p>|</p>
-            <p>B.S. in Computer Science</p>
-            <p>|</p>
-            <p>Minor in Mathematics</p>
-            <p>|</p>
-            <p>M.Eng. in Computer Science (ACCEND)</p>
-            <p> - Focus in Data Science</p>
-            <img src="uc_pic1.png" alt="UC Logo" class="education-image">
+
+        <section class="section section-alt" id="projects">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">What I'm building</p>
+                    <h2>Featured Projects</h2>
+                    <p>Current work that extends beyond my professional experience into applied AI, game systems, and cloud analytics.</p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <div class="project-number">01</div>
+                        <div class="project-status">In development</div>
+                        <h3>Verisimil</h3>
+                        <p class="project-subtitle">AI-Driven NPC System</p>
+                        <p class="project-description">
+                            A senior project exploring persistent, context-aware NPC behavior through modular LLM integrations and retrieval-augmented memory.
+                        </p>
+                        <ul>
+                            <li>Developing a modular Unity integration layer for cloud and locally hosted LLMs using C# and UnityWebRequest.</li>
+                            <li>Building a retrieval-augmented NPC memory system with Qdrant vector storage and embeddings for persistent interactions.</li>
+                            <li>Designing data-driven character systems for NPC personalities, backstories, relationships, and shared world knowledge.</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Unity 6</span><span>C#</span><span>Qdrant</span><span>LLMs</span><span>RAG</span>
+                        </div>
+                        <p class="project-date">Aug. 2026 – Present</p>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-number">02</div>
+                        <div class="project-status">Active pipeline</div>
+                        <h3>NFL Analytics Pipeline</h3>
+                        <p class="project-subtitle">Automated Cloud Analytics</p>
+                        <p class="project-description">
+                            A recurring data pipeline that ingests newly available NFL game data, generates updated analytics, and visualizes trends throughout the season.
+                        </p>
+                        <ul>
+                            <li>Developed an automated Python pipeline that ingests newly available NFL game data and generates updated player and team analytics following each game.</li>
+                            <li>Built an Azure Data Factory pipeline to process and store incoming NFL data, enabling analytics to refresh throughout the season.</li>
+                            <li>Created interactive Power BI visualizations to track player performance, team trends, and game-level metrics.</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Python</span><span>Azure</span><span>Data Factory</span><span>Power BI</span>
+                        </div>
+                        <p class="project-date">Aug. 2025 – Present</p>
+                    </article>
+                </div>
+            </div>
         </section>
-        <!-- Contact -->
-        <section id="contact">
-            <h1 id="section-header">Contact</h1>
-            <p>Email: <a href="mailto:niemanjt@mail.uc.edu">niemanjt@mail.uc.edu</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/joshua-niemantsverdriet" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-            <p>GitHub: <a href="https://github.com/josh-niemantsverdriet" target="_blank" rel="noopener noreferrer">GitHub
+
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Technical toolkit</p>
+                    <h2>Skills</h2>
+                </div>
+
+                <div class="skill-groups">
+                    <article class="skill-group reveal">
+                        <h3>Languages</h3>
+                        <div class="skill-chips">
+                            <span>Python</span><span>SQL</span><span>Java</span><span>TypeScript</span><span>C++</span><span>C#</span><span>C</span>
+                        </div>
+                    </article>
+                    <article class="skill-group reveal">
+                        <h3>Frameworks & Engineering</h3>
+                        <div class="skill-chips">
+                            <span>Spring Boot</span><span>Angular</span><span>dbt</span><span>Node.js</span><span>Maven</span><span>JUnit</span><span>Mockito</span>
+                        </div>
+                    </article>
+                    <article class="skill-group reveal">
+                        <h3>Data & Databases</h3>
+                        <div class="skill-chips">
+                            <span>Snowflake</span><span>PostgreSQL</span><span>IBM Db2</span><span>Azure SQL Database</span><span>Power BI</span>
+                        </div>
+                    </article>
+                    <article class="skill-group reveal">
+                        <h3>Cloud & Tools</h3>
+                        <div class="skill-chips">
+                            <span>Azure</span><span>AWS</span><span>Docker</span><span>Terraform</span><span>Jenkins</span><span>Git</span><span>Grafana</span><span>AppDynamics</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="education">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Education</p>
+                    <h2>University of Cincinnati</h2>
+                </div>
+
+                <div class="education-card reveal">
+                    <div class="education-copy">
+                        <div class="degree-row">
+                            <div>
+                                <h3>B.S. in Computer Science</h3>
+                                <p>Expected May 2027 · GPA 3.485</p>
+                            </div>
+                            <span class="degree-label">Undergraduate</span>
+                        </div>
+                        <div class="degree-row">
+                            <div>
+                                <h3>M.Eng. in Computer Science</h3>
+                                <p>ACCEND program · GPA 4.000</p>
+                            </div>
+                            <span class="degree-label">Graduate</span>
+                        </div>
+                        <div class="degree-row">
+                            <div>
+                                <h3>Minor in Mathematics</h3>
+                                <p>Additional quantitative coursework alongside Computer Science.</p>
+                            </div>
+                            <span class="degree-label">Minor</span>
+                        </div>
+                        <p class="activities"><strong>Activities:</strong> Bearcat Bands, Boardgame Club, Innovation Challenge, RevolutionUC</p>
+                    </div>
+                    <img src="uc_pic1.png" alt="University of Cincinnati logo" class="uc-logo">
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="container contact-card reveal">
+                <p class="eyebrow">Let's connect</p>
+                <h2>Interested in building something useful?</h2>
+                <p>I am pursuing software engineering and data-focused opportunities beginning after graduation in 2027.</p>
+                <div class="contact-links">
+                    <a href="mailto:niemanjt@mail.uc.edu">niemanjt@mail.uc.edu</a>
+                    <a href="https://linkedin.com/in/joshua-niemantsverdriet" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/josh-niemantsverdriet" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Josh Niemantsverdriet</p>
+            <a href="#top">Back to top ↑</a>
+        </div>
+    </footer>
+</body>
+</html>
